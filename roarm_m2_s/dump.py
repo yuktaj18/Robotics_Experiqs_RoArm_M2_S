@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+
 import cv2
 import rclpy
 import numpy as np
@@ -33,8 +33,8 @@ class SubcriberNodeClass(Node):
         red_upper = np.array([180, 255, 255], np.uint8)
         green_lower = np.array([35, 100, 100], np.uint8)
         green_upper = np.array([85, 255, 255], np.uint8)
-        blue_lower = np.array([94, 80, 2], np.uint8)
-        blue_upper = np.array([120, 255, 255], np.uint8)
+        blue_lower = np.array([100, 150, 100], np.uint8)
+        blue_upper = np.array([140, 255, 255], np.uint8)
 
         # define mask
         red_mask = cv2.inRange(hsvFrame, red_lower, red_upper)
